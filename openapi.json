@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FeatureFlagAudit API",
+    "version": "1.0.0",
+    "description": "Flagsmith vs LaunchDarkly Self-Hosted TCO, Unleash vs PostHog Latency & OpenFeature SDK",
+    "contact": {
+      "name": "FeatureFlagAudit",
+      "url": "https://featureflagaudit.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://featureflagaudit.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
